@@ -1,0 +1,19 @@
+schema_version: 1
+repository: bayesian-and-black-box-optimization
+role: umbrella
+axis: methodology
+area: bayesian-black-box-optimization
+status: active
+owner: jorsacademy
+projects:
+  - bayesian-optimization-endustri-muhendisligi
+  - botorch-bayesian-policy-search
+  - constrained-bayesian-optimization-chemical-process-python
+  - nevergrad-black-box-policy-optimization
+  - processoptimizer-industrial-process-optimization
+  - sambo-sequential-model-based-optimization
+  - smac3-simulation-based-optimization
+conventions:
+  provenance_records: true
+  reproducibility_expected: true
+  benchmark_assumptions_documented: true
