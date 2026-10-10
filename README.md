@@ -183,6 +183,12 @@ The multi-fidelity implementation is intentionally educational: its transparent 
 
 The repository is therefore intended as a compact but complete teaching sequence, not an exhaustive reference on modern Bayesian Optimization.
 
+## Continuous integration and validation boundary
+
+The [native optimizer CI](.github/workflows/native-ci.yml) validates the maintained root implementations in `src/` on Python 3.10–3.12. The tests exercise real Gaussian-process fitting, bounded continuous decisions, finite-set Bayesian optimization without duplicate evaluations, and finite/uncertainty-aware multi-fidelity predictions.
+
+The consolidated source snapshots under `projects/` and notebooks under `notebooks/` are **not** executed by this lightweight CI job; they retain independent dependency and reproducibility requirements. This distinction prevents false claims that all optional BoTorch, Nevergrad, SMAC, and notebook integrations have passed.
+
 ## License
 
 This repository is intended for noncommercial use. See `LICENSE.md` for details.
